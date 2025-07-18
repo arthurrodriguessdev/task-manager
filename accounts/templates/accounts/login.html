@@ -1,1 +1,21 @@
-<h1>Ola</h1>
+{% extends "_base.html" %}
+
+{% block title %}
+Página de Login
+{% endblock %}
+
+{% block content %}
+<div class="login">
+    <h1 class="login-title">Login</h1>
+    <div>
+        <form class="form">
+            <div class="inputs">
+                <input class="name" type="text" id="nome" name="nome" placeholder="Digite o nome do usuário">
+                <input class="password" type="password" id="senha" name="senha" placeholder="Insira a senha">
+                <button class="button" type="submit">Entrar</button>
+            </div>
+        </form>
+    </div>
+    <p>Esquecer senha</p>
+</div>
+{% endblock %}

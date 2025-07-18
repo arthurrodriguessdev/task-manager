@@ -1,0 +1,28 @@
+.login{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(157, 157, 255);
+}
+
+.inputs{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+    
+}
+.password, .name{
+    border: 2px solid #1a1a1a;
+    border-radius: 7px;
+    padding: 5px;
+    width: 150px;
+}
+
+.button{
+    background-color: rgb(27, 27, 53);
+    color: #fff;
+    border: 2px solid rgb(27, 27, 53);
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
