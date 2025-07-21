@@ -1,0 +1,18 @@
+{% extends "_base.html" %}
+
+{% block title %}
+Página de Cadastro
+{% endblock %}
+
+{% block content %}
+<div class="login">
+<h2 class="login-title">Realize seu cadastro</h2>
+    <form class="form" action="{% url 'cadastro_view' %}" method="POST">
+    {% csrf_token %} <!--Segurança, obrigatório-->
+    <input class="name" type="text" name="nome" placeholder="Escolha um nome de usuário">
+    <input class="password" type="password" name="senha" placeholder="Crie uma senha">
+    <button class="button" type="submit">Cadastrar</button>
+    <p class="tela-login-redirect">Já tem conta? <a class="tela-login-redirect" href="{% url 'login_view' %}">Fazer login</a></p>
+    </form>
+</div>
+{% endblock %}

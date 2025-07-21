@@ -42,6 +42,9 @@ body {
     font-size: 14px;
 }
 
+.register-link{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .name::placeholder, .password::placeholder{
     color: #999999;
     font-size: 13px;
@@ -60,4 +63,8 @@ body {
     font-size: 14px;
     color: #007BFF;
     text-decoration: none;
+}
+
+.tela-login-redirect{
+    font-family: Arial, Helvetica, sans-serif;
 }

@@ -7,10 +7,12 @@ Página de Login
 {% block content %}
 <div class="login">
     <h1 class="login-title">Seja bem-vindo!</h1>
-    <form class="form">
+    <form class="form" action="{% url 'login_view' %}" method="POST">
+        {% csrf_token %} <!--Token de segurança (verificação de formulário) é obrigatório-->
         <input class="name" type="text" id="nome" name="nome" placeholder="Digite o nome do usuário">
         <input class="password" type="password" id="senha" name="senha" placeholder="Insira a senha">
-        <button class="button" type="submit">Entrar</button>
+        <button class="button" type="submit" value="entrar">Entrar</button>
+        <p class="register-link">Ainda não tem uma conta? <a href="{% url 'cadastro_view' %}">Cadastre-se</a></p>
     </form>
     <p><a href="#" class="forgot-password">Esqueceu a senha?</a></p>
 </div>
