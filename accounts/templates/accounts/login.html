@@ -6,16 +6,12 @@ Página de Login
 
 {% block content %}
 <div class="login">
-    <h1 class="login-title">Login</h1>
-    <div>
-        <form class="form">
-            <div class="inputs">
-                <input class="name" type="text" id="nome" name="nome" placeholder="Digite o nome do usuário">
-                <input class="password" type="password" id="senha" name="senha" placeholder="Insira a senha">
-                <button class="button" type="submit">Entrar</button>
-            </div>
-        </form>
-    </div>
-    <p>Esquecer senha</p>
+    <h1 class="login-title">Seja bem-vindo!</h1>
+    <form class="form">
+        <input class="name" type="text" id="nome" name="nome" placeholder="Digite o nome do usuário">
+        <input class="password" type="password" id="senha" name="senha" placeholder="Insira a senha">
+        <button class="button" type="submit">Entrar</button>
+    </form>
+    <p><a href="#" class="forgot-password">Esqueceu a senha?</a></p>
 </div>
 {% endblock %}

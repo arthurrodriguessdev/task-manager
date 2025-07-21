@@ -1,28 +1,63 @@
-.login{
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.login {
+    height: 100vh;
+    background-color: #1a222b;
     display: flex;
-    justify-content: center;
-    background-color: rgb(157, 157, 255);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* CENTRALIZA VERTICALMENTE */
 }
 
-.inputs{
-   display: flex;
-   flex-direction: column;
-   gap: 5px;
-    
-}
-.password, .name{
-    border: 2px solid #1a1a1a;
-    border-radius: 7px;
-    padding: 5px;
-    width: 150px;
+.login-title {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    color: white; 
 }
 
-.button{
-    background-color: rgb(27, 27, 53);
-    color: #fff;
-    border: 2px solid rgb(27, 27, 53);
-    border-radius: 20px;
-    padding: 5px;
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 15px;
+    background-color: #f4f4f4;
+    padding: 50px;
+    height: 350px;
+    width: 300px;
+    align-items: center; /* CENTRALIZA OS CAMPOS DENTRO DO FORM */
+}
+
+.name, .password , .button{
+    padding: 15px;
+    width: 250px;
+    border-radius: 15px;
+    border: none;
+    background-color: #2f304b;
+    color: #ffffff;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.name::placeholder, .password::placeholder{
+    color: #999999;
+    font-size: 13px;
+}
+
+.button {
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 30px;
     cursor: pointer;
+    padding: 15px;
 }
 
+.forgot-password {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+}
